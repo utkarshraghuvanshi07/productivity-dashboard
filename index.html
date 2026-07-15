@@ -7,10 +7,84 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-        <h1>productivity-dashboard</h1>
-        
-    </main>
+      <div class="app">
+        <aside class="sidebar">
+          <div class="logo">
+            <img
+              src="./assets/Task_Management_-_App_Icon_by_Henrik_Abonyi__-removebg-preview.png"
+              alt=""
+            />
+            <div>
+              <h1>Productivity Dashboard</h1>
+            </div>
+          </div>
+
+          <nav class="sidebar-nav">
+            <button>Dashboard</button>
+            <button>Todo List</button>
+            <button>Daily Planner</button>
+            <button>Daily Goals</button>
+            <button>Pomodoro Timer</button>
+            <button>Settings</button>
+          </nav>
+
+          <div class="profile">
+            <div class="avtar">
+              <img src="./assets/download.jpg" alt="">
+            </div>
+            <h1>Utkarsh</h1>
+          </div>
+        </aside>
+        <main class="main-content">
+          <header class="header">
+            <div class="header-left"></div>
+
+            <div class="header-center"></div>
+
+            <div class="header-right"></div>
+          </header>
+
+          <section class="dashboard">
+            <div class="top-cards"></div>
+
+            <div class="middle-grid"></div>
+
+            <div class="bottom-grid"></div>
+          </section>
+
+          <section class="todo-page">
+            <div class="page-header"></div>
+
+            <div class="task-controls"></div>
+
+            <div class="task-list"></div>
+          </section>
+
+          <section class="planner-page">
+            <div class="page-header"></div>
+
+            <div class="planner-container"></div>
+          </section>
+
+          <section class="goals-page">
+            <div class="page-header"></div>
+
+            <div class="goal-container"></div>
+          </section>
+
+          <section class="pomodoro-page">
+            <div class="page-header"></div>
+
+            <div class="timer-container"></div>
+          </section>
+
+          <section class="settings-page">
+            <div class="page-header"></div>
+
+            <div class="settings-container"></div>
+          </section>
+        </main>
+      </div>
     <script src="app.js"></script>
   </body>
 </html>
