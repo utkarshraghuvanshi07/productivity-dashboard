@@ -5,86 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-      <div class="app">
-        <aside class="sidebar">
-          <div class="logo">
-            <img
-              src="./assets/Task_Management_-_App_Icon_by_Henrik_Abonyi__-removebg-preview.png"
-              alt=""
-            />
-            <div>
-              <h1>Productivity Dashboard</h1>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">
+          <img
+            src="./assets/Task_Management_-_App_Icon_by_Henrik_Abonyi__-removebg-preview.png"
+            alt=""
+          />
+          <div>
+            <h1>Productivity Dashboard</h1>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <button>Dashboard</button>
+          <button>Todo List</button>
+          <button>Daily Planner</button>
+          <button>Daily Goals</button>
+          <button>Pomodoro Timer</button>
+          <button>Settings</button>
+        </nav>
+
+        <div class="profile">
+          <div class="avtar">
+            <img src="./assets/download.jpg" alt="" />
+          </div>
+          <h1>Utkarsh</h1>
+        </div>
+      </aside>
+      <main class="main-content">
+        <header class="header">
+          <div class="header-left">
+            <h1>Welcome, Utkarsh!👋</h1>
+            <p>Let's make today productive and amazing</p>
+          </div>
+
+          <div class="header-center">
+            <div class="search_container">
+              <input type=" text" placeholder="Search anything.." />
+              <i class="ri-search-ai-line"></i>
             </div>
           </div>
 
-          <nav class="sidebar-nav">
-            <button>Dashboard</button>
-            <button>Todo List</button>
-            <button>Daily Planner</button>
-            <button>Daily Goals</button>
-            <button>Pomodoro Timer</button>
-            <button>Settings</button>
-          </nav>
-
-          <div class="profile">
-            <div class="avtar">
-              <img src="./assets/download.jpg" alt="">
-            </div>
-            <h1>Utkarsh</h1>
+          <div class="header-right">
+            <button>Change Mode</button>
           </div>
-        </aside>
-        <main class="main-content">
-          <header class="header">
-            <div class="header-left"></div>
+        </header>
 
-            <div class="header-center"></div>
+        <section class="dashboard">
+          <div class="top-cards">
+            <div>Total tasks</div>
+            <div>Completed</div>
+            <div>Active Goals</div>
+            <div>focus Time</div>
+            <div>Weather,Date&Time</div>
+          </div>
 
-            <div class="header-right"></div>
-          </header>
+          <div class="middle-grid">
+               <div>Todo</div>
+               <div>planner</div>
+               <div>Motivation</div>
+               <div>pomodoro</div>
+               <div>Goals</div>
+          </div>
 
-          <section class="dashboard">
-            <div class="top-cards"></div>
+          <div class="bottom-grid"></div>
+        </section>
 
-            <div class="middle-grid"></div>
+        <section class="todo-page">
+          <div class="page-header"></div>
 
-            <div class="bottom-grid"></div>
-          </section>
+          <div class="task-controls"></div>
 
-          <section class="todo-page">
-            <div class="page-header"></div>
+          <div class="task-list"></div>
+        </section>
 
-            <div class="task-controls"></div>
+        <section class="planner-page">
+          <div class="page-header"></div>
 
-            <div class="task-list"></div>
-          </section>
+          <div class="planner-container"></div>
+        </section>
 
-          <section class="planner-page">
-            <div class="page-header"></div>
+        <section class="goals-page">
+          <div class="page-header"></div>
 
-            <div class="planner-container"></div>
-          </section>
+          <div class="goal-container"></div>
+        </section>
 
-          <section class="goals-page">
-            <div class="page-header"></div>
+        <section class="pomodoro-page">
+          <div class="page-header"></div>
 
-            <div class="goal-container"></div>
-          </section>
+          <div class="timer-container"></div>
+        </section>
 
-          <section class="pomodoro-page">
-            <div class="page-header"></div>
+        <section class="settings-page">
+          <div class="page-header"></div>
 
-            <div class="timer-container"></div>
-          </section>
-
-          <section class="settings-page">
-            <div class="page-header"></div>
-
-            <div class="settings-container"></div>
-          </section>
-        </main>
-      </div>
+          <div class="settings-container"></div>
+        </section>
+      </main>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
