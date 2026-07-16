@@ -14,31 +14,34 @@
     <div class="app">
       <aside class="sidebar">
         <div class="logo">
-          <img
+          <!-- <img
             src="./assets/Task_Management_-_App_Icon_by_Henrik_Abonyi__-removebg-preview.png"
             alt=""
-          />
-          <div>
-            <h1>Productivity Dashboard</h1>
+            width="60px"
+          /> -->
+          <i class="ri-remix-fill"></i>
+          <div class="logo-name">
+            <h1>MY WORK</h1>
           </div>
         </div>
 
-        <nav class="sidebar-nav">
-          <button>Dashboard</button>
-          <button>Todo List</button>
-          <button>Daily Planner</button>
-          <button>Daily Goals</button>
-          <button>Pomodoro Timer</button>
-          <button>Settings</button>
-        </nav>
+        <div class="sidebar-nav">
+          <button class="nav-button button-emerald">Dashboard</button>
+          <button class="nav-button button-emerald">Todo List</button>
+          <button class="nav-button button-emerald">Daily Planner</button>
+          <button class="nav-button button-emerald">Daily Goals</button>
+          <button class="nav-button button-emerald">Pomodoro Timer</button>
+          <button class="nav-button button-emerald">Settings</button>
+        </div>
 
-        <div class="profile">
+        <!-- <div class="profile">
           <div class="avtar">
-            <img src="./assets/download.jpg" alt="" />
+            <img src="./assets/download.jpg" alt="" width="200px" />
           </div>
           <h1>Utkarsh</h1>
-        </div>
+        </div> -->
       </aside>
+
       <main class="main-content">
         <header class="header">
           <div class="header-left">
@@ -54,28 +57,27 @@
           </div>
 
           <div class="header-right">
-            <button>Change Mode</button>
+            <input type="checkbox" class="checkbox">
           </div>
         </header>
 
         <section class="dashboard">
-          <div class="top-cards">
-            <div>Total tasks</div>
-            <div>Completed</div>
-            <div>Active Goals</div>
-            <div>focus Time</div>
-            <div>Weather,Date&Time</div>
-          </div>
+          
+            <div class="total-tasks">Total tasks</div>
+            <div class="completed-tasks">Completed</div>
+            <div class="Active-goals">Active Goals</div>
+            <div class="focus-time">focus Time</div>
+            <div class="weather-div">Weather,Date&Time</div>
+            <div class="profile">profile</div>
 
-          <div class="middle-grid">
-               <div>Todo</div>
-               <div>planner</div>
-               <div>Motivation</div>
-               <div>pomodoro</div>
-               <div>Goals</div>
-          </div>
+            <div class="dashboard-todo-card">Todo</div>
+            <div class="dashboard-planner-card">planner</div>
+            <div class="dashboard-motivation-card">Motivation</div>
+            <div class="dashboard-pomodoro-card">pomodoro</div>
+            <div class="dashboard-goals-card">Goals</div>
+         
 
-          <div class="bottom-grid"></div>
+          <!-- <div class="bottom-grid"></div> -->
         </section>
 
         <section class="todo-page">
