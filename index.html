@@ -14,11 +14,6 @@
     <div class="app">
       <aside class="sidebar">
         <div class="logo">
-          <!-- <img
-            src="./assets/Task_Management_-_App_Icon_by_Henrik_Abonyi__-removebg-preview.png"
-            alt=""
-            width="60px"
-          /> -->
           <i class="ri-remix-fill"></i>
           <div class="logo-name">
             <h1>MY WORK</h1>
@@ -26,12 +21,18 @@
         </div>
 
         <div class="sidebar-nav">
-          <button class="nav-button button-emerald">Dashboard</button>
-          <button class="nav-button button-emerald">Todo List</button>
-          <button class="nav-button button-emerald">Daily Planner</button>
-          <button class="nav-button button-emerald">Daily Goals</button>
-          <button class="nav-button button-emerald">Pomodoro Timer</button>
-          <button class="nav-button button-emerald">Settings</button>
+          <button class="nav-button button-emerald das_nav">Dashboard</button>
+          <button class="nav-button button-emerald todo_nav">Todo List</button>
+          <button class="nav-button button-emerald plan_nav">
+            Daily Planner
+          </button>
+          <button class="nav-button button-emerald goal_nav">
+            Daily Goals
+          </button>
+          <button class="nav-button button-emerald timer_nav">
+            Pomodoro Timer
+          </button>
+          <button class="nav-button button-emerald sett_nav">Settings</button>
         </div>
 
         <!-- <div class="profile">
@@ -57,59 +58,107 @@
           </div>
 
           <div class="header-right">
-            <input type="checkbox" class="checkbox">
+            <input type="checkbox" class="checkbox" />
           </div>
         </header>
 
         <section class="dashboard">
-          
-            <div class="total-tasks">Total tasks</div>
-            <div class="completed-tasks">Completed</div>
-            <div class="Active-goals">Active Goals</div>
-            <div class="focus-time">focus Time</div>
-            <div class="weather-div">Weather,Date&Time</div>
-            <div class="profile">profile</div>
+          <div class="total-tasks">Total tasks</div>
+          <div class="completed-tasks">Completed</div>
+          <div class="Active-goals">Active Goals</div>
+          <div class="focus-time">focus Time</div>
+          <div class="weather-div">Weather,Date&Time</div>
+          <div class="profile">
+            <img src="./assets/download.jpg" alt="">
+          </div>
 
-            <div class="dashboard-todo-card">Todo</div>
-            <div class="dashboard-planner-card">planner</div>
-            <div class="dashboard-motivation-card">Motivation</div>
-            <div class="dashboard-pomodoro-card">pomodoro</div>
-            <div class="dashboard-goals-card">Goals</div>
-         
+          <div class="dashboard-todo-card">Todo</div>
+          <div class="dashboard-planner-card">planner</div>
+          <div class="dashboard-motivation-card">
+            <h1>"Every step forward is a step towards greatness."</h1>
+          </div>
+          <div class="dashboard-pomodoro-card">pomodoro</div>
+          <div class="dashboard-goals-card">Goals</div>
 
           <!-- <div class="bottom-grid"></div> -->
         </section>
 
         <section class="todo-page">
-          <div class="page-header"></div>
-
-          <div class="task-controls"></div>
-
           <div class="task-list"></div>
+
+          <div class="head">
+            <h1>PERSONAL Todo list</h1>
+            <p>✅Track Your daily Tasks</p>
+          </div>
+          <div>
+            <input class="todoinput" type="text" placeholder="Add Task" />
+            <button id="todoadd">Add</button>
+          </div>
+
+          <div class="todo-list">
+            <ul></ul>
+          </div>
         </section>
 
         <section class="planner-page">
-          <div class="page-header"></div>
+          <div class="plannertask-list"></div>
 
-          <div class="planner-container"></div>
+          <div class="head">
+            <h1>PLAN YOUR DAY</h1>
+            <p>✅ADD Your daily Tasks</p>
+          </div>
+          <div>
+            <input class="start-time" type="time" /> to
+            <input class="end-time" type="time" />
+            <input class="plannerinput" type="text" placeholder="Add Task" />
+            <button id="planneradd">Add</button>
+          </div>
+
+          <div class="planner-list">
+            <ul class="plannerul"></ul>
+          </div>
         </section>
 
         <section class="goals-page">
-          <div class="page-header"></div>
+          <div class="goaltask-list"></div>
 
-          <div class="goal-container"></div>
+          <div class="head">
+            <h1>today goals</h1>
+            <p>✅ADD Your goals</p>
+          </div>
+          <div>
+            <input class="goalinput" type="text" placeholder="Add Task" />
+            <button id="goaladd">Add</button>
+          </div>
+
+          <div class="goal-list">
+            <ul class="goalul"></ul>
+          </div>
         </section>
 
         <section class="pomodoro-page">
-          <div class="page-header"></div>
+          <div class="page-header"><h1>Focus time</h1></div>
 
-          <div class="timer-container"></div>
+          <div class="timer-container">
+            <h1 id="timer">25:00</h1>
+
+            <div class="timer-buttons">
+              <button id="startBtn">Start</button>
+              <button id="stopBtn">Stop</button>
+              <button id="resetBtn">Reset</button>
+            </div>
+          </div>
         </section>
 
         <section class="settings-page">
-          <div class="page-header"></div>
+          <div class="page-header">profile settings</div>
 
-          <div class="settings-container"></div>
+          <div class="settings-container">
+            <div class="username">
+              <input class="username" type="text" placeholder="Enter username" />
+              <button class="submitusernamebtn">submit</button>
+            </div>
+          </div>
         </section>
       </main>
     </div>

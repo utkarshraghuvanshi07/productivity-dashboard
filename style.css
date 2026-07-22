@@ -24,7 +24,7 @@ body {
   height: 100%;
   width: 280px;
   padding: 20px;
-  background-color: rgb(190, 213, 184);
+  background-color: rgb(251, 255, 250);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -97,16 +97,16 @@ main.main-content{
   height: 100%;
   width: 100%;
   padding: 20px;
-  background-color: rgb(156, 143, 143);
+  background-color: rgb(214, 214, 214);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 main > header
 {
-  height: 15%;
+  height: 120px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -116,7 +116,7 @@ main > header
 
 .dashboard{
   width: 100%;
-  height: 100%;
+  height: 83vh;
   padding: 20px 30px 20px 0px;
   display: grid;
   gap: 1%;
@@ -137,58 +137,89 @@ main > header
 }
 
 .total-tasks{
-  background-color: red;
+  background-color: whitesmoke;
   grid-area: total-tasks;
 }
 
 .completed-tasks{
-  background-color: pink;
+  background-color: whitesmoke;
   grid-area: completed-tasks;
 }
 
 .Active-goals{
-  background-color: green;
+  background-color: whitesmoke;
   grid-area: Active-goals;
 }
 
 .focus-time{
-  background-color: blue;
+  background-color: whitesmoke;
   grid-area: focus-time;
 }
 
 .weather-div{
-  background-color: skyblue;
+  background-color: whitesmoke;
   grid-area: weather-div;
 }
 
 .dashboard-todo-card{
-  background-color:silver ;
+  background-color:whitesmoke ;
   grid-area: todo;
 }
 
 .dashboard-planner-card{
-  background-color:rgb(16, 217, 228) ;
+  background-color:whitesmoke ;
   grid-area: planner;
 }
 .dashboard-Active-card{
-  background-color:rgb(77, 17, 17) ;
+  background-color:whitesmoke ;
   grid-area: Active;
 }
 .dashboard-motivation-card{
-  background-color:rgb(19, 81, 92) ;
+  background-color:whitesmoke ;
   grid-area: motivation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
 }
 .dashboard-goals-card{
-  background-color:rgb(216, 244, 3) ;
+  background-color:whitesmoke;
   grid-area: goals;
 }
 
 .dashboard-pomodoro-card{
-  background-color: hotpink;
+  background-color: whitesmoke;
   grid-area: pomodoro;
 }
 
 .profile{
-  background-color: rgb(211, 114, 114);
+  background-color: whitesmoke;
   grid-area: profile;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.profile>img{
+  border-radius: 5px;
+  height: 90%;
+}
+
+/* navigation pages */
+
+.todo-page,
+.planner-page,
+.goals-page,
+.pomodoro-page,
+.settings-page{
+    display:none;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* completed tasks */
+.completed{
+    text-decoration: line-through;
+    opacity: .6;
 }
